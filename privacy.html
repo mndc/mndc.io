@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Privacy Policy | Monadic Consulting Kft.</title>
+		<meta
+			name="description"
+			content="Privacy policy for the internal tooling and Google API integrations operated by Monadic Consulting Kft."
+		/>
+		<meta name="color-scheme" content="light" />
+		<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+		<link rel="shortcut icon" href="favicon.svg" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap"
+			rel="stylesheet"
+		/>
+		<style>
+			:root {
+				--bg: #f7f8f5;
+				--surface: #ffffff;
+				--surface-soft: #f1f4ee;
+				--text: #151a13;
+				--muted: #556052;
+				--line: #d8ded2;
+				--brand: #234d2a;
+				--brand-soft: #dfe9dd;
+				--radius: 16px;
+				--shadow: 0 20px 42px -30px rgba(16, 25, 13, 0.35);
+			}
+
+			* {
+				box-sizing: border-box;
+			}
+
+			html,
+			body {
+				margin: 0;
+				padding: 0;
+			}
+
+			body {
+				font-family: "Space Grotesk", "Segoe UI", sans-serif;
+				background: radial-gradient(circle at 90% -10%, #e4ecd8 0%, transparent 38%),
+					radial-gradient(circle at -10% 10%, #ecf2e7 0%, transparent 42%), var(--bg);
+				color: var(--text);
+				line-height: 1.55;
+			}
+
+			.site {
+				max-width: 860px;
+				margin: 0 auto;
+				padding: 28px 20px 48px;
+			}
+
+			.topbar {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				gap: 16px;
+				margin-bottom: 34px;
+			}
+
+			.brand {
+				display: inline-flex;
+				align-items: center;
+				gap: 10px;
+				font-weight: 600;
+				letter-spacing: 0.02em;
+			}
+
+			.brand-mark {
+				width: 14px;
+				height: 14px;
+				border-radius: 4px;
+				background: linear-gradient(135deg, #326f3d 0%, #123c1d 100%);
+				box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.4);
+			}
+
+			.brand a {
+				color: inherit;
+				text-decoration: none;
+			}
+
+			.doc {
+				background: linear-gradient(160deg, rgba(255, 255, 255, 0.94) 0%, rgba(245, 248, 241, 0.9) 100%);
+				border: 1px solid var(--line);
+				border-radius: calc(var(--radius) + 6px);
+				box-shadow: var(--shadow);
+				padding: clamp(26px, 4vw, 46px);
+			}
+
+			.eyebrow {
+				text-transform: uppercase;
+				letter-spacing: 0.11em;
+				color: var(--muted);
+				font-weight: 600;
+				font-size: 0.76rem;
+			}
+
+			h1 {
+				margin: 10px 0 6px;
+				font-family: "Newsreader", Georgia, serif;
+				font-size: clamp(1.9rem, 4.4vw, 2.9rem);
+				line-height: 1.1;
+				font-weight: 500;
+			}
+
+			.updated {
+				color: var(--muted);
+				font-size: 0.92rem;
+				margin: 0 0 26px;
+			}
+
+			h2 {
+				font-family: "Newsreader", Georgia, serif;
+				font-weight: 500;
+				font-size: clamp(1.25rem, 2.4vw, 1.6rem);
+				margin: 30px 0 8px;
+			}
+
+			p,
+			li {
+				color: #2a3328;
+			}
+
+			ul {
+				margin: 8px 0 0;
+				padding-left: 20px;
+			}
+
+			li + li {
+				margin-top: 7px;
+			}
+
+			a {
+				color: var(--brand);
+			}
+
+			.callout {
+				margin-top: 30px;
+				border-radius: 12px;
+				border: 1px solid #cad6c4;
+				background: var(--brand-soft);
+				padding: 16px 18px;
+			}
+
+			.footer {
+				margin-top: 18px;
+				background: #131a11;
+				border-radius: var(--radius);
+				color: #d8e2d2;
+				padding: 22px;
+			}
+
+			.footer-title {
+				font-size: 0.9rem;
+				letter-spacing: 0.08em;
+				text-transform: uppercase;
+				color: #93aa8f;
+				margin: 0 0 6px;
+			}
+
+			.footer p {
+				margin: 0;
+				color: #d8e2d2;
+			}
+
+			.footer a {
+				color: #d8e2d2;
+				text-decoration: underline;
+				text-underline-offset: 2px;
+			}
+
+			.copy {
+				margin-top: 10px;
+				font-size: 0.9rem;
+				color: #9cb197;
+			}
+		</style>
+	</head>
+	<body>
+		<main class="site">
+			<header class="topbar" aria-label="Company heading">
+				<div class="brand">
+					<span class="brand-mark" aria-hidden="true"></span>
+					<a href="/">Monadic Consulting Kft.</a>
+				</div>
+			</header>
+
+			<article class="doc">
+				<div class="eyebrow">Legal</div>
+				<h1>Privacy Policy</h1>
+				<p class="updated">Last updated: <span id="updated">2026</span></p>
+
+				<p>
+					This policy describes how <strong>Monadic Consulting Kft.</strong> (“we”, “us”) handles
+					information in connection with this website and the internal software tools operated on it,
+					including integrations with Google services.
+				</p>
+
+				<h2>1. Who we are</h2>
+				<p>
+					Monadic Consulting Kft., Hungary. VAT ID: HU25191343. Contact:
+					<a href="mailto:info@mndc.io">info@mndc.io</a>.
+				</p>
+
+				<h2>2. Scope of this policy</h2>
+				<p>
+					This website is a static informational site. It does not offer user accounts and does not
+					collect personal data from visitors beyond standard server logs kept by our hosting and CDN
+					providers for security and operational purposes.
+				</p>
+
+				<h2>3. Google API integrations</h2>
+				<p>
+					We operate internal tooling that connects to Google services (for example Google Drive,
+					Docs, Sheets, Slides and Calendar) through Google’s official APIs. These integrations are
+					used solely by authorized members of our organization for their own work.
+				</p>
+				<ul>
+					<li>Access is authorized by the account holder through Google’s standard OAuth 2.0 consent flow.</li>
+					<li>Access and refresh tokens are stored locally on our own infrastructure, protected from
+						unauthorized access, and used only to call Google APIs on behalf of the authorizing user.</li>
+					<li>We do <strong>not</strong> sell, rent, or share data obtained through Google APIs with third parties.</li>
+					<li>We do <strong>not</strong> use Google API data for advertising or profiling.</li>
+					<li>We do <strong>not</strong> use Google API data to train or improve generalized machine-learning models.</li>
+				</ul>
+
+				<h2>4. Data retention and deletion</h2>
+				<p>
+					Data accessed through Google APIs is used only as needed to perform the requested operations
+					and is not retained beyond that purpose, except where required by law. You may revoke access
+					at any time at
+					<a href="https://myaccount.google.com/permissions" rel="noopener">myaccount.google.com/permissions</a>.
+					To request deletion of any locally stored credentials, contact us at
+					<a href="mailto:info@mndc.io">info@mndc.io</a>.
+				</p>
+
+				<h2>5. Security</h2>
+				<p>
+					We apply reasonable technical and organizational measures to protect credentials and data,
+					including restricted file permissions and access limited to authorized personnel.
+				</p>
+
+				<h2>6. Changes</h2>
+				<p>
+					We may update this policy from time to time. The latest version is always published on this page.
+				</p>
+
+				<div class="callout">
+					<strong>Google API Limited Use</strong>
+					<p style="margin: 8px 0 0">
+						Our use of information received from Google APIs adheres to the Google API Services User Data
+						Policy, including the Limited Use requirements.
+					</p>
+				</div>
+			</article>
+
+			<footer class="footer" aria-label="Legal information">
+				<div class="footer-title">Legal Entity</div>
+				<p>
+					Monadic Consulting Kft.<br />+36204689607<br />Hungary<br />VAT ID: HU25191343
+					<br />Email: <a href="mailto:info@mndc.io">info@mndc.io</a>
+				</p>
+				<p class="copy">&copy; <span id="year">2026</span> Monadic Consulting Kft. All rights reserved.</p>
+			</footer>
+		</main>
+		<script>
+			document.getElementById("year").textContent = String(new Date().getFullYear());
+			document.getElementById("updated").textContent = String(new Date().getFullYear());
+		</script>
+	</body>
+</html>
